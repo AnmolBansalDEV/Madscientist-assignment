@@ -42,7 +42,7 @@ export default function Container(){
               endIcon={<PlaylistAddIcon />}>New</Button>
               <div className="cards-renders">
             <Card />
-            {components.map(x => <Card />)}
+            {components.map((x, index) => <Card key={index} />)}
               </div>
         </div>
     )
